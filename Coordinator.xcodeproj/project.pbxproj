@@ -19,6 +19,22 @@
 		51C870E12354CAB600294BB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51C870DF2354CAB600294BB9 /* LaunchScreen.storyboard */; };
 		51C870E72354D10C00294BB9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C870E62354D10C00294BB9 /* Coordinator.swift */; };
 		51C870E82354D10C00294BB9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C870E62354D10C00294BB9 /* Coordinator.swift */; };
+		51C870F62354D17100294BB9 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C870EA2354D17100294BB9 /* TabBarCoordinator.swift */; };
+		51C870F72354D17100294BB9 /* TabBarCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C870EA2354D17100294BB9 /* TabBarCoordinator.swift */; };
+		51C870F82354D17100294BB9 /* ControllerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C870EB2354D17100294BB9 /* ControllerCoordinator.swift */; };
+		51C870F92354D17100294BB9 /* ControllerCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C870EB2354D17100294BB9 /* ControllerCoordinator.swift */; };
+		51C870FA2354D17100294BB9 /* NavCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C870EC2354D17100294BB9 /* NavCoordinator.swift */; };
+		51C870FB2354D17100294BB9 /* NavCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C870EC2354D17100294BB9 /* NavCoordinator.swift */; };
+		51C870FE2354D17100294BB9 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C870EF2354D17100294BB9 /* Components.swift */; };
+		51C870FF2354D17100294BB9 /* Components.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C870EF2354D17100294BB9 /* Components.swift */; };
+		51C871002354D17100294BB9 /* ParentCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C870F12354D17100294BB9 /* ParentCoordinatorDelegate.swift */; };
+		51C871012354D17100294BB9 /* ParentCoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C870F12354D17100294BB9 /* ParentCoordinatorDelegate.swift */; };
+		51C871022354D17100294BB9 /* TabPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C870F32354D17100294BB9 /* TabPresenter.swift */; };
+		51C871032354D17100294BB9 /* TabPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C870F32354D17100294BB9 /* TabPresenter.swift */; };
+		51C871042354D17100294BB9 /* ModalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C870F42354D17100294BB9 /* ModalPresenter.swift */; };
+		51C871052354D17100294BB9 /* ModalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C870F42354D17100294BB9 /* ModalPresenter.swift */; };
+		51C871062354D17100294BB9 /* NavigationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C870F52354D17100294BB9 /* NavigationPresenter.swift */; };
+		51C871072354D17100294BB9 /* NavigationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C870F52354D17100294BB9 /* NavigationPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +64,14 @@
 		51C870E02354CAB600294BB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51C870E22354CAB600294BB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		51C870E62354D10C00294BB9 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		51C870EA2354D17100294BB9 /* TabBarCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabBarCoordinator.swift; sourceTree = "<group>"; };
+		51C870EB2354D17100294BB9 /* ControllerCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ControllerCoordinator.swift; sourceTree = "<group>"; };
+		51C870EC2354D17100294BB9 /* NavCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavCoordinator.swift; sourceTree = "<group>"; };
+		51C870EF2354D17100294BB9 /* Components.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Components.swift; sourceTree = "<group>"; };
+		51C870F12354D17100294BB9 /* ParentCoordinatorDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParentCoordinatorDelegate.swift; sourceTree = "<group>"; };
+		51C870F32354D17100294BB9 /* TabPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabPresenter.swift; sourceTree = "<group>"; };
+		51C870F42354D17100294BB9 /* ModalPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalPresenter.swift; sourceTree = "<group>"; };
+		51C870F52354D17100294BB9 /* NavigationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +124,10 @@
 			isa = PBXGroup;
 			children = (
 				51C870E62354D10C00294BB9 /* Coordinator.swift */,
+				51C870EE2354D17100294BB9 /* Components */,
+				51C870E92354D17100294BB9 /* iOS Coordinators */,
+				51C870F02354D17100294BB9 /* ParentCoordinatorDelegate */,
+				51C870F22354D17100294BB9 /* Presenters */,
 				51C870B52354C7E700294BB9 /* Coordinator.h */,
 				51C870B62354C7E700294BB9 /* Info.plist */,
 			);
@@ -128,6 +156,42 @@
 				51C870E22354CAB600294BB9 /* Info.plist */,
 			);
 			path = CoordinatorExamples;
+			sourceTree = "<group>";
+		};
+		51C870E92354D17100294BB9 /* iOS Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				51C870EA2354D17100294BB9 /* TabBarCoordinator.swift */,
+				51C870EB2354D17100294BB9 /* ControllerCoordinator.swift */,
+				51C870EC2354D17100294BB9 /* NavCoordinator.swift */,
+			);
+			path = "iOS Coordinators";
+			sourceTree = "<group>";
+		};
+		51C870EE2354D17100294BB9 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				51C870EF2354D17100294BB9 /* Components.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		51C870F02354D17100294BB9 /* ParentCoordinatorDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				51C870F12354D17100294BB9 /* ParentCoordinatorDelegate.swift */,
+			);
+			path = ParentCoordinatorDelegate;
+			sourceTree = "<group>";
+		};
+		51C870F22354D17100294BB9 /* Presenters */ = {
+			isa = PBXGroup;
+			children = (
+				51C870F32354D17100294BB9 /* TabPresenter.swift */,
+				51C870F42354D17100294BB9 /* ModalPresenter.swift */,
+				51C870F52354D17100294BB9 /* NavigationPresenter.swift */,
+			);
+			path = Presenters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +335,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51C871002354D17100294BB9 /* ParentCoordinatorDelegate.swift in Sources */,
+				51C870FE2354D17100294BB9 /* Components.swift in Sources */,
+				51C871042354D17100294BB9 /* ModalPresenter.swift in Sources */,
+				51C870FA2354D17100294BB9 /* NavCoordinator.swift in Sources */,
+				51C871022354D17100294BB9 /* TabPresenter.swift in Sources */,
+				51C870F62354D17100294BB9 /* TabBarCoordinator.swift in Sources */,
+				51C870F82354D17100294BB9 /* ControllerCoordinator.swift in Sources */,
+				51C871062354D17100294BB9 /* NavigationPresenter.swift in Sources */,
 				51C870E72354D10C00294BB9 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,10 +359,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51C870FB2354D17100294BB9 /* NavCoordinator.swift in Sources */,
+				51C871052354D17100294BB9 /* ModalPresenter.swift in Sources */,
+				51C871072354D17100294BB9 /* NavigationPresenter.swift in Sources */,
 				51C870D92354CAB400294BB9 /* SecondViewController.swift in Sources */,
+				51C871012354D17100294BB9 /* ParentCoordinatorDelegate.swift in Sources */,
+				51C871032354D17100294BB9 /* TabPresenter.swift in Sources */,
 				51C870D72354CAB400294BB9 /* FirstViewController.swift in Sources */,
+				51C870F72354D17100294BB9 /* TabBarCoordinator.swift in Sources */,
+				51C870E82354D10C00294BB9 /* Coordinator.swift in Sources */,
 				51C870D32354CAB400294BB9 /* AppDelegate.swift in Sources */,
+				51C870FF2354D17100294BB9 /* Components.swift in Sources */,
 				51C870D52354CAB400294BB9 /* SceneDelegate.swift in Sources */,
+				51C870F92354D17100294BB9 /* ControllerCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
