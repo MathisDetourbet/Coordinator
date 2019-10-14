@@ -17,6 +17,8 @@
 		51C870DC2354CAB400294BB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51C870DA2354CAB400294BB9 /* Main.storyboard */; };
 		51C870DE2354CAB600294BB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51C870DD2354CAB600294BB9 /* Assets.xcassets */; };
 		51C870E12354CAB600294BB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51C870DF2354CAB600294BB9 /* LaunchScreen.storyboard */; };
+		51C870E72354D10C00294BB9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C870E62354D10C00294BB9 /* Coordinator.swift */; };
+		51C870E82354D10C00294BB9 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C870E62354D10C00294BB9 /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,7 @@
 		51C870DD2354CAB600294BB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51C870E02354CAB600294BB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51C870E22354CAB600294BB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51C870E62354D10C00294BB9 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +99,7 @@
 		51C870B42354C7E700294BB9 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				51C870E62354D10C00294BB9 /* Coordinator.swift */,
 				51C870B52354C7E700294BB9 /* Coordinator.h */,
 				51C870B62354C7E700294BB9 /* Info.plist */,
 			);
@@ -205,6 +209,7 @@
 				TargetAttributes = {
 					51C870B12354C7E700294BB9 = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 					51C870BA2354C7E700294BB9 = {
 						CreatedOnToolsVersion = 11.0;
@@ -266,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51C870E72354D10C00294BB9 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,6 +447,7 @@
 		51C870C72354C7E700294BB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LK3BSFY85C;
@@ -457,6 +464,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.MathisDetourbet.Coordinator;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -465,6 +473,7 @@
 		51C870C82354C7E700294BB9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LK3BSFY85C;
@@ -489,6 +498,7 @@
 		51C870CA2354C7E700294BB9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LK3BSFY85C;
 				INFOPLIST_FILE = CoordinatorTests/Info.plist;
@@ -507,6 +517,7 @@
 		51C870CB2354C7E700294BB9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LK3BSFY85C;
 				INFOPLIST_FILE = CoordinatorTests/Info.plist;
