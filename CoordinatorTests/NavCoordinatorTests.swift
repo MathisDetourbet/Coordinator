@@ -7,27 +7,54 @@
 //
 
 import XCTest
+@testable import Coordinator
 
 class NavCoordinatorTests: XCTestCase {
+    
+    var navCoordinator: NavCoordinator!
 
     override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        navCoordinator = NavCoordinator(controller: UINavigationController())
     }
 
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func test_SetInitialViewController_Should_Set_ViewController_In_Navigation_Stack() {
+        let vc = UIViewController()
+        navCoordinator.setInitialViewController(vc)
+        XCTAssertFalse(navCoordinator.components.controller.viewControllers.isEmpty)
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func test_PushViewController_Should_Append_ViewController_In_Navigation_Stack() {
+        let initialVC = UIViewController()
+        let pushedVC = UIViewController()
+        navCoordinator.setInitialViewController(initialVC)
+        navCoordinator.pushViewController(pushedVC, animated: false)
+        XCTAssertTrue(navCoordinator.components.controller.viewControllers.count == 2, "PushViewController should append the vc to the navigation stack")
+    }
+    
+    func test_popViewController_Should_Remove_ViewController_In_Navigation_Stack() {
+        let initialVC = UIViewController()
+        let pushedVC = UIViewController()
+        navCoordinator.setInitialViewController(initialVC)
+        navCoordinator.pushViewController(pushedVC, animated: false)
+        
+        navCoordinator.popViewController(animated: false)
+        XCTAssertTrue(navCoordinator.components.controller.viewControllers.count == 1, "PopViewController should remove the last vc to the navigation stack")
+    }
+    
+    func test_PopToRootViewController_Should_Remove_All_VC_In_Navigation_Stack() {
+        let initialVC = UIViewController()
+        let pushedVC = UIViewController()
+        let secondPushedVC = UIViewController()
+        navCoordinator.setInitialViewController(initialVC)
+        navCoordinator.pushViewController(pushedVC, animated: false)
+        navCoordinator.pushViewController(secondPushedVC, animated: false)
+        
+        navCoordinator.popToRootViewController(animated: false)
+        XCTAssertTrue(navCoordinator.components.controller.viewControllers.count == 1, "PushViewController should append the vc to the navigation stack")
     }
 
 }

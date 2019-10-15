@@ -9,22 +9,6 @@
 import XCTest
 @testable import Coordinator
 
-class FakeCoordinator: Coordinator {
-    var components: CoordinatorComponents<UIViewController>
-    var parentCoordinatorDelegate: ParentCoordinatorDelegate?
-    typealias ControllerType = UIViewController
-    
-    private(set) var didCallStart = false
-    
-    required init(controller: UIViewController) {
-        self.components = CoordinatorComponents<UIViewController>(controller: controller)
-    }
-    
-    func start() {
-        didCallStart = true
-    }
-}
-
 class CoordinatorTest: XCTestCase {
     
     var rootCoordinator: FakeCoordinator!

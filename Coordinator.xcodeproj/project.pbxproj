@@ -35,6 +35,9 @@
 		51C871052354D17100294BB9 /* ModalPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C870F42354D17100294BB9 /* ModalPresenter.swift */; };
 		51C871062354D17100294BB9 /* NavigationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C870F52354D17100294BB9 /* NavigationPresenter.swift */; };
 		51C871072354D17100294BB9 /* NavigationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C870F52354D17100294BB9 /* NavigationPresenter.swift */; };
+		51C871092354F1BC00294BB9 /* NavCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C871082354F1BC00294BB9 /* NavCoordinatorTests.swift */; };
+		51C8710B2354F29400294BB9 /* MockerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C8710A2354F29400294BB9 /* MockerFactory.swift */; };
+		51C8710D2355C4E400294BB9 /* TabBarCoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C8710C2355C4E400294BB9 /* TabBarCoordinatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +75,9 @@
 		51C870F32354D17100294BB9 /* TabPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabPresenter.swift; sourceTree = "<group>"; };
 		51C870F42354D17100294BB9 /* ModalPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalPresenter.swift; sourceTree = "<group>"; };
 		51C870F52354D17100294BB9 /* NavigationPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationPresenter.swift; sourceTree = "<group>"; };
+		51C871082354F1BC00294BB9 /* NavCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavCoordinatorTests.swift; sourceTree = "<group>"; };
+		51C8710A2354F29400294BB9 /* MockerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockerFactory.swift; sourceTree = "<group>"; };
+		51C8710C2355C4E400294BB9 /* TabBarCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarCoordinatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +143,10 @@
 		51C870BF2354C7E700294BB9 /* CoordinatorTests */ = {
 			isa = PBXGroup;
 			children = (
+				51C8710A2354F29400294BB9 /* MockerFactory.swift */,
 				51C870C02354C7E700294BB9 /* CoordinatorTests.swift */,
+				51C871082354F1BC00294BB9 /* NavCoordinatorTests.swift */,
+				51C8710C2355C4E400294BB9 /* TabBarCoordinatorTests.swift */,
 				51C870C22354C7E700294BB9 /* Info.plist */,
 			);
 			path = CoordinatorTests;
@@ -161,9 +170,9 @@
 		51C870E92354D17100294BB9 /* iOS Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				51C870EA2354D17100294BB9 /* TabBarCoordinator.swift */,
 				51C870EB2354D17100294BB9 /* ControllerCoordinator.swift */,
 				51C870EC2354D17100294BB9 /* NavCoordinator.swift */,
+				51C870EA2354D17100294BB9 /* TabBarCoordinator.swift */,
 			);
 			path = "iOS Coordinators";
 			sourceTree = "<group>";
@@ -187,8 +196,8 @@
 		51C870F22354D17100294BB9 /* Presenters */ = {
 			isa = PBXGroup;
 			children = (
-				51C870F32354D17100294BB9 /* TabPresenter.swift */,
 				51C870F42354D17100294BB9 /* ModalPresenter.swift */,
+				51C870F32354D17100294BB9 /* TabPresenter.swift */,
 				51C870F52354D17100294BB9 /* NavigationPresenter.swift */,
 			);
 			path = Presenters;
@@ -351,7 +360,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51C871092354F1BC00294BB9 /* NavCoordinatorTests.swift in Sources */,
 				51C870C12354C7E700294BB9 /* CoordinatorTests.swift in Sources */,
+				51C8710D2355C4E400294BB9 /* TabBarCoordinatorTests.swift in Sources */,
+				51C8710B2354F29400294BB9 /* MockerFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
