@@ -59,5 +59,15 @@ class CoordinatorTest: XCTestCase {
         XCTAssertTrue(rootCoordinator.components.childCoordinators.count == childrenCount-1, "Dismissing coordinator should decrease the number of child coordinator")
         XCTAssertFalse(rootCoordinator.components.childCoordinators.contains(where: { ($0 as! FakeCoordinator) === childCoordinator}), "Dismissing coordinator should remove the right coordinator")
     }
+    
+    func test_Finished_Should_Dismiss_Child_Coordinator_By_His_Parent() {
+        let childCoordinator = FakeCoordinator(controller: UIViewController())
+        
+        rootCoordinator.present(coordinator: childCoordinator, animated: false, completion: nil)
+        XCTAssertFalse(rootCoordinator.components.childCoordinators.isEmpty)
+        
+        childCoordinator.parentCoordinatorDelegate?.finished(coordinator: childCoordinator, animated: false, completion: nil)
+        XCTAssertTrue(rootCoordinator.components.childCoordinators.isEmpty, "Calling finished method to the parent coordinator should remove the child")
+    }
 }
 
