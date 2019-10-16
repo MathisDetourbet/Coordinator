@@ -35,10 +35,10 @@ extension Coordinator {
     }
 
     func dismiss<T: Coordinator>(coordinator: T, animated: Bool, completion: (() -> Void)?) {
-        guard let i = components.childCoordinators.firstIndex(where: { ($0 as! T) === coordinator }) else {
+        guard let index = components.childCoordinators.firstIndex(where: { ($0 as! T) === coordinator }) else {
             return
         }
         components.controller.dismiss(animated: animated, completion: completion)
-        components.childCoordinators.remove(at: i)
+        components.removeChildCoordinator(at: index)
     }
 }
