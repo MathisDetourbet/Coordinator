@@ -27,10 +27,14 @@ final class CoordinatorComponents<ControllerType: UIViewController> {
         childCoordinators.append(coordinator)
     }
     
-    func removeChildCoordinator(at index: Int) {
-        guard childCoordinators.startIndex...childCoordinators.endIndex ~= index else {
+    func removeChildCoordinator<T: Coordinator>(_ coordinator: T) {
+        guard let index = childCoordinators.firstIndex(where: { ($0 as! T) === coordinator }) else {
             return
         }
         childCoordinators.remove(at: index)
+    }
+    
+    func contains<T: Coordinator>(_ coordinator: T) -> Bool {
+        return childCoordinators.contains { ($0 as! T) === coordinator }
     }
 }
