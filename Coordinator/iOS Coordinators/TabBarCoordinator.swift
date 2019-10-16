@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-class TabBarCoordinator: Coordinator, ModalPresenter, TabPresenter {
+class TabBarCoordinator: Coordinator, ModalPresenter, TabBarPresenter {
     
     let components: CoordinatorComponents<UITabBarController>
     weak var parentCoordinatorDelegate: ParentCoordinatorDelegate?
