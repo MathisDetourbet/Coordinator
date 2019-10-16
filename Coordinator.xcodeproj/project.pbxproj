@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5115A11E235625DE001B793A /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115A11D235625DE001B793A /* RootCoordinator.swift */; };
 		514FF0BA2357350800966CC2 /* CoordinatorComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514FF0B92357350800966CC2 /* CoordinatorComponentsTests.swift */; };
 		51C870BC2354C7E700294BB9 /* Coordinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C870B22354C7E700294BB9 /* Coordinator.framework */; };
 		51C870C12354C7E700294BB9 /* CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C870C02354C7E700294BB9 /* CoordinatorTests.swift */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5115A11D235625DE001B793A /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
 		514FF0B92357350800966CC2 /* CoordinatorComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorComponentsTests.swift; sourceTree = "<group>"; };
 		51C870B22354C7E700294BB9 /* Coordinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Coordinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51C870B52354C7E700294BB9 /* Coordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coordinator.h; sourceTree = "<group>"; };
@@ -105,6 +107,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5115A11F23562822001B793A /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				5115A11D235625DE001B793A /* RootCoordinator.swift */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
 		51C870A82354C7E700294BB9 = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +165,7 @@
 		51C870D12354CAB400294BB9 /* CoordinatorExamples */ = {
 			isa = PBXGroup;
 			children = (
+				5115A11F23562822001B793A /* Features */,
 				51C870D22354CAB400294BB9 /* AppDelegate.swift */,
 				51C870D42354CAB400294BB9 /* SceneDelegate.swift */,
 				51C870D62354CAB400294BB9 /* FirstViewController.swift */,
@@ -380,6 +391,7 @@
 				51C870F72354D17100294BB9 /* TabBarCoordinator.swift in Sources */,
 				51C870E82354D10C00294BB9 /* Coordinator.swift in Sources */,
 				51C870D32354CAB400294BB9 /* AppDelegate.swift in Sources */,
+				5115A11E235625DE001B793A /* RootCoordinator.swift in Sources */,
 				51C870FF2354D17100294BB9 /* CoordinatorComponents.swift in Sources */,
 				51C870D52354CAB400294BB9 /* SceneDelegate.swift in Sources */,
 			);
