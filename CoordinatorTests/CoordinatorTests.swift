@@ -11,7 +11,7 @@ import XCTest
 
 class CoordinatorTest: XCTestCase {
     
-    var rootCoordinator: FakeCoordinator!
+    private var rootCoordinator: FakeCoordinator!
 
     override func setUp() {
         rootCoordinator = FakeCoordinator(controller: UIViewController())

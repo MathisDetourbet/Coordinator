@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		514FF0BA2357350800966CC2 /* CoordinatorComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514FF0B92357350800966CC2 /* CoordinatorComponentsTests.swift */; };
 		51C870BC2354C7E700294BB9 /* Coordinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C870B22354C7E700294BB9 /* Coordinator.framework */; };
 		51C870C12354C7E700294BB9 /* CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C870C02354C7E700294BB9 /* CoordinatorTests.swift */; };
 		51C870C32354C7E700294BB9 /* Coordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 51C870B52354C7E700294BB9 /* Coordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -49,6 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		514FF0B92357350800966CC2 /* CoordinatorComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorComponentsTests.swift; sourceTree = "<group>"; };
 		51C870B22354C7E700294BB9 /* Coordinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Coordinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51C870B52354C7E700294BB9 /* Coordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coordinator.h; sourceTree = "<group>"; };
 		51C870B62354C7E700294BB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -142,6 +144,7 @@
 			children = (
 				51C8710A2354F29400294BB9 /* MockerFactory.swift */,
 				51C870C02354C7E700294BB9 /* CoordinatorTests.swift */,
+				514FF0B92357350800966CC2 /* CoordinatorComponentsTests.swift */,
 				51C871082354F1BC00294BB9 /* NavCoordinatorTests.swift */,
 				51C8710C2355C4E400294BB9 /* TabBarCoordinatorTests.swift */,
 				51C870C22354C7E700294BB9 /* Info.plist */,
@@ -355,6 +358,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				514FF0BA2357350800966CC2 /* CoordinatorComponentsTests.swift in Sources */,
 				51C871092354F1BC00294BB9 /* NavCoordinatorTests.swift in Sources */,
 				51C870C12354C7E700294BB9 /* CoordinatorTests.swift in Sources */,
 				51C8710D2355C4E400294BB9 /* TabBarCoordinatorTests.swift in Sources */,
