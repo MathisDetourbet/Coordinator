@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol Coordinator: ModalPresenter, ParentCoordinatorDelegate {
+public protocol Coordinator: ModalPresenter, ParentCoordinatorDelegate {
     
     associatedtype ControllerType: UIViewController
     var components: CoordinatorComponents<ControllerType> { get }
@@ -23,7 +23,7 @@ protocol Coordinator: ModalPresenter, ParentCoordinatorDelegate {
 
 extension Coordinator {
     
-    func present<T: Coordinator>(coordinator: T, animated: Bool, completion: (() -> Void)?) {
+    public func present<T: Coordinator>(coordinator: T, animated: Bool, completion: (() -> Void)?) {
         components.addChildCoordinator(coordinator)
         
         coordinator.parentCoordinatorDelegate = self
@@ -34,7 +34,7 @@ extension Coordinator {
         components.controller.present(childController, animated: animated, completion: completion)
     }
 
-    func dismiss<T: Coordinator>(coordinator: T, animated: Bool, completion: (() -> Void)?) {
+    public func dismiss<T: Coordinator>(coordinator: T, animated: Bool, completion: (() -> Void)?) {
         
         guard components.contains(coordinator) else { return }
         components.controller.dismiss(animated: animated, completion: completion)

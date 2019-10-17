@@ -9,7 +9,7 @@
 import Foundation
 
 /// All coordinator except the root view controller needs a parent. That relation between them is used for sharing message like the one describe in that protocol.
-protocol ParentCoordinatorDelegate: class {
+public protocol ParentCoordinatorDelegate: class {
     
     /// A soon as a coordinator has finished its job and doesn't need to be kept alive, you will need to call that method to notify its parent for being deinit.
     ///
@@ -23,7 +23,7 @@ protocol ParentCoordinatorDelegate: class {
 
 extension ParentCoordinatorDelegate where Self: Coordinator {
     
-    func finished<T: Coordinator>(coordinator: T, animated: Bool, completion: (() -> Void)?) {
+    public func finished<T: Coordinator>(coordinator: T, animated: Bool, completion: (() -> Void)?) {
         dismiss(coordinator: coordinator, animated: animated, completion: completion)
     }
 }

@@ -11,7 +11,7 @@ import UIKit
 
 /// The behavior of navigation between view controllers in iOS is defined by the UINavigationController. The latter gets mainly the push and pop transition. These methods have been implemented to act as a Coordinator. In other words it will call methods
 /// from its controller (a UINavigationController) directly.
-protocol NavigationPresenter {
+public protocol NavigationPresenter {
     
     /// Sets the initial view controller of the navigation. That method will add the view controller to the navigation controller stack.
     ///
@@ -44,19 +44,19 @@ protocol NavigationPresenter {
 
 extension NavigationPresenter where Self: NavCoordinator {
     
-    func setInitialViewController(_ viewController: UIViewController, animated: Bool = false) {
+    public func setInitialViewController(_ viewController: UIViewController, animated: Bool = false) {
         components.controller.setViewControllers([viewController], animated: animated)
     }
     
-    func pushViewController(_ viewController: UIViewController, animated flag: Bool) {
+    public func pushViewController(_ viewController: UIViewController, animated flag: Bool) {
         components.controller.pushViewController(viewController, animated: flag)
     }
     
-    func popViewController(animated flag: Bool) {
+    public func popViewController(animated flag: Bool) {
         components.controller.popViewController(animated: flag)
     }
     
-    func popToRootViewController(animated flag: Bool) {
+    public func popToRootViewController(animated flag: Bool) {
         components.controller.popToRootViewController(animated: flag)
     }
 }

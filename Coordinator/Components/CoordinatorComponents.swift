@@ -10,31 +10,45 @@ import Foundation
 import UIKit
 
 /// This class has been made for gathering coordinator components in a single class to respect encapsulation and for more readability. CoordinatorComponents class can be seen as the coordinator's model.
-final class CoordinatorComponents<ControllerType: UIViewController> {
+public final class CoordinatorComponents<ControllerType: UIViewController> {
     
     /// The controller used by the Coordinator. It should inherit from UIViewController.
-    let controller: ControllerType
+    public let controller: ControllerType
     
     /// An array which represents all children of a coordinator.
     private(set) var childCoordinators: [Any]
     
-    init(controller: ControllerType) {
+    /// Init components with a controller inehriting from UIViewController.
+    public init(controller: ControllerType) {
         self.controller = controller
         self.childCoordinators = []
     }
     
-    func addChildCoordinator<T: Coordinator>(_ coordinator: T) {
+    /// Adds child coordinator to the stack.
+    ///
+    /// - Parameter coordinator: the child coordinator to add.
+    ///
+    internal func addChildCoordinator<T: Coordinator>(_ coordinator: T) {
         childCoordinators.append(coordinator)
     }
     
-    func removeChildCoordinator<T: Coordinator>(_ coordinator: T) {
+    /// Removes child coordinator passed in parameter
+    ///
+    /// - Parameter coordinator: the child coordinator to remove.
+    ///
+    internal func removeChildCoordinator<T: Coordinator>(_ coordinator: T) {
         guard let index = childCoordinators.firstIndex(where: { ($0 as! T) === coordinator }) else {
             return
         }
         childCoordinators.remove(at: index)
     }
     
-    func contains<T: Coordinator>(_ coordinator: T) -> Bool {
+    /// Returns a Boolean value indicating whether the stack contains the child coordinator passed in parameter.
+    ///
+    /// - Parameter coordinator: the child coordinator to find in the stack.
+    /// - Returns: A Boolean of value `true` if the child coordinator is found, `false` otherwise.
+    ///
+    internal func contains<T: Coordinator>(_ coordinator: T) -> Bool {
         return childCoordinators.contains { ($0 as! T) === coordinator }
     }
 }

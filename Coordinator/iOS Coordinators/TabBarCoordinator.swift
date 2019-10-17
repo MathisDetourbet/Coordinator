@@ -9,12 +9,12 @@
 import Foundation
 import UIKit
 
-class TabBarCoordinator: Coordinator, ModalPresenter, TabBarPresenter {
+open class TabBarCoordinator: Coordinator, ModalPresenter, TabBarPresenter {
     
-    let components: CoordinatorComponents<UITabBarController>
-    weak var parentCoordinatorDelegate: ParentCoordinatorDelegate?
+    public let components: CoordinatorComponents<UITabBarController>
+    public weak var parentCoordinatorDelegate: ParentCoordinatorDelegate?
     
-    required init(controller: UITabBarController) {
+    required public init(controller: UITabBarController) {
         self.components = CoordinatorComponents<UITabBarController>(controller: controller)
     }
     
@@ -26,7 +26,7 @@ class TabBarCoordinator: Coordinator, ModalPresenter, TabBarPresenter {
         components.controller.setViewControllers(viewControllers, animated: false)
     }
     
-    func start() {
+    open func start() {
         fatalError("start method must be overrided in you coordinator class.")
     }
 }

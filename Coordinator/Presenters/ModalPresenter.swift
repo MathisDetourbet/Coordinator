@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 /// A modal presenter can produce two types of controller presentation : present or dismiss. That protocol defines these two behaviors for a Coordinator.
-protocol ModalPresenter {
+public protocol ModalPresenter {
     
     /// Present modally a view controller on top of another controller.
     ///
@@ -33,11 +33,11 @@ protocol ModalPresenter {
 
 extension ModalPresenter where Self: Coordinator {
     
-    func presentViewController(_ viewController: UIViewController, animated: Bool, completion: (()-> Void)?) {
+    public func presentViewController(_ viewController: UIViewController, animated: Bool, completion: (()-> Void)?) {
         components.controller.present(viewController, animated: animated, completion: completion)
     }
     
-    func dismiss(animated flag: Bool, completion: (()-> Void)?) {
+    public func dismiss(animated flag: Bool, completion: (()-> Void)?) {
         components.controller.presentedViewController?.dismiss(animated: flag, completion: completion)
     }
 }

@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 /// The behavior of a UITabBarController is mainly the setup of its view controllers. These view controllers represent tabs of the tab bar controller.
-protocol TabBarPresenter: ModalPresenter {
+public protocol TabBarPresenter: ModalPresenter {
     
     /// Sets the root view controllers of the tab bar controller.
     ///
@@ -24,7 +24,7 @@ protocol TabBarPresenter: ModalPresenter {
 
 extension TabBarPresenter where Self: TabBarCoordinator {
     
-    func setViewControllers(_ viewControllers: [UIViewController], animated flag: Bool) {
+    public func setViewControllers(_ viewControllers: [UIViewController], animated flag: Bool) {
         components.controller.setViewControllers(viewControllers, animated: flag)
     }
 }
