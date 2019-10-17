@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+/// A tab bar coordinator has got the same navigation behaviour as `UITabBarController`. That's why its controller type will be of type `UITabBarController`. Subclass that class if your app is using a tab bar controller.
 open class TabBarCoordinator: Coordinator, ModalPresenter, TabBarPresenter {
     
     public let components: CoordinatorComponents<UITabBarController>
