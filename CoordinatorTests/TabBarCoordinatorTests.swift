@@ -11,7 +11,7 @@ import XCTest
 
 class TabBarCoordinatorTests: XCTestCase {
     
-    var tabBarCoordinator: TabBarCoordinator!
+    private var tabBarCoordinator: TabBarCoordinator!
 
     override func setUp() {
         tabBarCoordinator = TabBarCoordinator(controller: UITabBarController())

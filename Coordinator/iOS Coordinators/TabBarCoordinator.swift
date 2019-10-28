@@ -9,12 +9,13 @@
 import Foundation
 import UIKit
 
-class TabBarCoordinator: Coordinator, ModalPresenter, TabPresenter {
+/// A tab bar coordinator has got the same navigation behaviour as `UITabBarController`. That's why its controller type will be of type `UITabBarController`. Subclass that class if your app is using a tab bar controller.
+open class TabBarCoordinator: Coordinator, ModalPresenter, TabBarPresenter {
     
-    let components: CoordinatorComponents<UITabBarController>
-    weak var parentCoordinatorDelegate: ParentCoordinatorDelegate?
+    public let components: CoordinatorComponents<UITabBarController>
+    public weak var parentCoordinatorDelegate: ParentCoordinatorDelegate?
     
-    required init(controller: UITabBarController) {
+    required public init(controller: UITabBarController) {
         self.components = CoordinatorComponents<UITabBarController>(controller: controller)
     }
     
@@ -26,7 +27,7 @@ class TabBarCoordinator: Coordinator, ModalPresenter, TabPresenter {
         components.controller.setViewControllers(viewControllers, animated: false)
     }
     
-    func start() {
+    open func start() {
         fatalError("start method must be overrided in you coordinator class.")
     }
 }

@@ -8,16 +8,16 @@
 
 import UIKit
 
-class NavCoordinator: Coordinator, ModalPresenter, NavigationPresenter {
+open class NavCoordinator: Coordinator, ModalPresenter, NavigationPresenter {
     
-    let components: CoordinatorComponents<UINavigationController>
-    weak var parentCoordinatorDelegate: ParentCoordinatorDelegate?
+    public let components: CoordinatorComponents<UINavigationController>
+    public weak var parentCoordinatorDelegate: ParentCoordinatorDelegate?
     
-    required init(controller: UINavigationController) {
+    required public init(controller: UINavigationController) {
         self.components = CoordinatorComponents<UINavigationController>(controller: controller)
     }
     
-    func start() {
+    open func start() {
         fatalError("start method must be overrided in you coordinator class.")
     }
 }
