@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 
 /// This class has been made for gathering coordinator components in a single class to respect encapsulation and for more readability. CoordinatorComponents class can be seen as the coordinator's model.
+/// Basically, the coordinator model represents a tree. Each coordinator has a reference to its parent and can have a child as well.
 public final class CoordinatorComponents<ControllerType: UIViewController> {
     
     /// The controller used by the Coordinator. It should inherit from UIViewController.
@@ -37,7 +38,13 @@ public final class CoordinatorComponents<ControllerType: UIViewController> {
     /// - Parameter coordinator: the child coordinator to remove.
     ///
     internal func removeChildCoordinator<T: Coordinator>(_ coordinator: T) {
-        guard let index = childCoordinators.firstIndex(where: { ($0 as! T) === coordinator }) else {
+        guard let index = childCoordinators.firstIndex(where: {
+            if let _ = $0 as? T {
+                return true
+            }
+            return false
+            
+        }) else {
             return
         }
         childCoordinators.remove(at: index)
@@ -49,6 +56,11 @@ public final class CoordinatorComponents<ControllerType: UIViewController> {
     /// - Returns: A Boolean of value `true` if the child coordinator is found, `false` otherwise.
     ///
     internal func contains<T: Coordinator>(_ coordinator: T) -> Bool {
-        return childCoordinators.contains { ($0 as! T) === coordinator }
+        return childCoordinators.contains {
+            if let _ = $0 as? T {
+                return true
+            }
+            return false
+        }
     }
 }
