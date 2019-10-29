@@ -27,7 +27,13 @@ open class TabBarCoordinator: Coordinator, ModalPresenter, TabBarPresenter {
         components.controller.setViewControllers(viewControllers, animated: false)
     }
     
+    internal func setupTabCoordinators<T: Coordinator>(_ coordinators: [T], completion: (() -> Void)? = nil) {
+        for coordinator in coordinators {
+            setupTabCoordinator(coordinator)
+        }
+    }
+    
     open func start() {
-        fatalError("start method must be overrided in you coordinator class.")
+        fatalError("start method must be overrided in your coordinator subclass.")
     }
 }

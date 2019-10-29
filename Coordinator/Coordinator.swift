@@ -10,7 +10,7 @@ import UIKit
 
 /// Represents a basic Coordinator interface.
 ///
-/// Basically, a coordinator is in charge of the navigation between all view controllers in your app. All your navigation requests will go through the current coordinator which is managing your active view
+/// Basically, a coordinator is in charge of the navigation between view controllers in your app. All your navigation requests will go through the current coordinator which is managing your active view
 /// controller. That' why the basic Coordinator has the same navigation behaviours than the `UIViewController` class, in other words: present and dismiss a view controller. In the case you need more navigation behaviour see NavigationCoordinator
 /// and TabBarCoordinator.
 ///
