@@ -1,5 +1,5 @@
 //
-//  SecondViewController.swift
+//  FirstViewController.swift
 //  CoordinatorExamples
 //
 //  Created by Mathis Detourbet on 14/10/19.
@@ -8,8 +8,10 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
-
+class DocumentsListViewController: UIViewController {
+    
+    public weak var routingDelegate: DocumentsListRouting?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

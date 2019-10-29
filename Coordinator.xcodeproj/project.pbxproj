@@ -7,15 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		510AF29A2368B998008B6847 /* TutorialStep1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510AF2992368B998008B6847 /* TutorialStep1ViewController.swift */; };
+		510AF29C2368BB8D008B6847 /* TutorialCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 510AF29B2368BB8D008B6847 /* TutorialCoordinator.swift */; };
 		5115A11E235625DE001B793A /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5115A11D235625DE001B793A /* RootCoordinator.swift */; };
+		513F895A2368BD9B00B83227 /* TutorialStep2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513F89592368BD9B00B83227 /* TutorialStep2ViewController.swift */; };
+		513F895C2368BF4900B83227 /* StoryboardHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513F895B2368BF4900B83227 /* StoryboardHelper.swift */; };
+		513F89602368C30000B83227 /* DocumentsListCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513F895F2368C30000B83227 /* DocumentsListCoordinator.swift */; };
+		513F89632368C34300B83227 /* SettingsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513F89622368C34300B83227 /* SettingsCoordinator.swift */; };
+		513F89652368C53E00B83227 /* DocumentsListRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 513F89642368C53E00B83227 /* DocumentsListRouting.swift */; };
 		514FF0BA2357350800966CC2 /* CoordinatorComponentsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 514FF0B92357350800966CC2 /* CoordinatorComponentsTests.swift */; };
 		51C870BC2354C7E700294BB9 /* Coordinator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51C870B22354C7E700294BB9 /* Coordinator.framework */; };
 		51C870C12354C7E700294BB9 /* CoordinatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C870C02354C7E700294BB9 /* CoordinatorTests.swift */; };
 		51C870C32354C7E700294BB9 /* Coordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = 51C870B52354C7E700294BB9 /* Coordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		51C870D32354CAB400294BB9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C870D22354CAB400294BB9 /* AppDelegate.swift */; };
 		51C870D52354CAB400294BB9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C870D42354CAB400294BB9 /* SceneDelegate.swift */; };
-		51C870D72354CAB400294BB9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C870D62354CAB400294BB9 /* FirstViewController.swift */; };
-		51C870D92354CAB400294BB9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C870D82354CAB400294BB9 /* SecondViewController.swift */; };
+		51C870D72354CAB400294BB9 /* DocumentsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C870D62354CAB400294BB9 /* DocumentsListViewController.swift */; };
+		51C870D92354CAB400294BB9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51C870D82354CAB400294BB9 /* SettingsViewController.swift */; };
 		51C870DC2354CAB400294BB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51C870DA2354CAB400294BB9 /* Main.storyboard */; };
 		51C870DE2354CAB600294BB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51C870DD2354CAB600294BB9 /* Assets.xcassets */; };
 		51C870E12354CAB600294BB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51C870DF2354CAB600294BB9 /* LaunchScreen.storyboard */; };
@@ -51,7 +58,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		510AF2992368B998008B6847 /* TutorialStep1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialStep1ViewController.swift; sourceTree = "<group>"; };
+		510AF29B2368BB8D008B6847 /* TutorialCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialCoordinator.swift; sourceTree = "<group>"; };
 		5115A11D235625DE001B793A /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
+		513F89592368BD9B00B83227 /* TutorialStep2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialStep2ViewController.swift; sourceTree = "<group>"; };
+		513F895B2368BF4900B83227 /* StoryboardHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardHelper.swift; sourceTree = "<group>"; };
+		513F895F2368C30000B83227 /* DocumentsListCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsListCoordinator.swift; sourceTree = "<group>"; };
+		513F89622368C34300B83227 /* SettingsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCoordinator.swift; sourceTree = "<group>"; };
+		513F89642368C53E00B83227 /* DocumentsListRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsListRouting.swift; sourceTree = "<group>"; };
 		514FF0B92357350800966CC2 /* CoordinatorComponentsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorComponentsTests.swift; sourceTree = "<group>"; };
 		51C870B22354C7E700294BB9 /* Coordinator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Coordinator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51C870B52354C7E700294BB9 /* Coordinator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Coordinator.h; sourceTree = "<group>"; };
@@ -62,8 +76,8 @@
 		51C870D02354CAB400294BB9 /* CoordinatorExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoordinatorExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51C870D22354CAB400294BB9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51C870D42354CAB400294BB9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		51C870D62354CAB400294BB9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		51C870D82354CAB400294BB9 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		51C870D62354CAB400294BB9 /* DocumentsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsListViewController.swift; sourceTree = "<group>"; };
+		51C870D82354CAB400294BB9 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		51C870DB2354CAB400294BB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		51C870DD2354CAB600294BB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51C870E02354CAB600294BB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -107,12 +121,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		510AF29D2368BB9C008B6847 /* Tutorial */ = {
+			isa = PBXGroup;
+			children = (
+				510AF29B2368BB8D008B6847 /* TutorialCoordinator.swift */,
+				510AF2992368B998008B6847 /* TutorialStep1ViewController.swift */,
+				513F89592368BD9B00B83227 /* TutorialStep2ViewController.swift */,
+			);
+			path = Tutorial;
+			sourceTree = "<group>";
+		};
 		5115A11F23562822001B793A /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				5115A11D235625DE001B793A /* RootCoordinator.swift */,
+				510AF29D2368BB9C008B6847 /* Tutorial */,
+				513F895D2368C2E000B83227 /* DocumentsListing */,
+				513F895E2368C2EC00B83227 /* Settings */,
+				513F89612368C31600B83227 /* DocumentDetailsViewController */,
 			);
 			path = Features;
+			sourceTree = "<group>";
+		};
+		513F895D2368C2E000B83227 /* DocumentsListing */ = {
+			isa = PBXGroup;
+			children = (
+				513F89642368C53E00B83227 /* DocumentsListRouting.swift */,
+				513F895F2368C30000B83227 /* DocumentsListCoordinator.swift */,
+				51C870D62354CAB400294BB9 /* DocumentsListViewController.swift */,
+			);
+			path = DocumentsListing;
+			sourceTree = "<group>";
+		};
+		513F895E2368C2EC00B83227 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				513F89622368C34300B83227 /* SettingsCoordinator.swift */,
+				51C870D82354CAB400294BB9 /* SettingsViewController.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		513F89612368C31600B83227 /* DocumentDetailsViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DocumentDetailsViewController;
 			sourceTree = "<group>";
 		};
 		51C870A82354C7E700294BB9 = {
@@ -165,12 +218,12 @@
 		51C870D12354CAB400294BB9 /* CoordinatorExamples */ = {
 			isa = PBXGroup;
 			children = (
+				5115A11D235625DE001B793A /* RootCoordinator.swift */,
 				5115A11F23562822001B793A /* Features */,
+				51C870DA2354CAB400294BB9 /* Main.storyboard */,
 				51C870D22354CAB400294BB9 /* AppDelegate.swift */,
 				51C870D42354CAB400294BB9 /* SceneDelegate.swift */,
-				51C870D62354CAB400294BB9 /* FirstViewController.swift */,
-				51C870D82354CAB400294BB9 /* SecondViewController.swift */,
-				51C870DA2354CAB400294BB9 /* Main.storyboard */,
+				513F895B2368BF4900B83227 /* StoryboardHelper.swift */,
 				51C870DD2354CAB600294BB9 /* Assets.xcassets */,
 				51C870DF2354CAB600294BB9 /* LaunchScreen.storyboard */,
 				51C870E22354CAB600294BB9 /* Info.plist */,
@@ -384,11 +437,18 @@
 				51C870FB2354D17100294BB9 /* NavCoordinator.swift in Sources */,
 				51C871052354D17100294BB9 /* ModalPresenter.swift in Sources */,
 				51C871072354D17100294BB9 /* NavigationPresenter.swift in Sources */,
-				51C870D92354CAB400294BB9 /* SecondViewController.swift in Sources */,
+				510AF29C2368BB8D008B6847 /* TutorialCoordinator.swift in Sources */,
+				51C870D92354CAB400294BB9 /* SettingsViewController.swift in Sources */,
+				513F895C2368BF4900B83227 /* StoryboardHelper.swift in Sources */,
 				51C871012354D17100294BB9 /* ParentCoordinatorDelegate.swift in Sources */,
+				513F89652368C53E00B83227 /* DocumentsListRouting.swift in Sources */,
 				51C871032354D17100294BB9 /* TabBarPresenter.swift in Sources */,
-				51C870D72354CAB400294BB9 /* FirstViewController.swift in Sources */,
+				513F895A2368BD9B00B83227 /* TutorialStep2ViewController.swift in Sources */,
+				513F89602368C30000B83227 /* DocumentsListCoordinator.swift in Sources */,
+				51C870D72354CAB400294BB9 /* DocumentsListViewController.swift in Sources */,
 				51C870F72354D17100294BB9 /* TabBarCoordinator.swift in Sources */,
+				513F89632368C34300B83227 /* SettingsCoordinator.swift in Sources */,
+				510AF29A2368B998008B6847 /* TutorialStep1ViewController.swift in Sources */,
 				51C870E82354D10C00294BB9 /* Coordinator.swift in Sources */,
 				51C870D32354CAB400294BB9 /* AppDelegate.swift in Sources */,
 				5115A11E235625DE001B793A /* RootCoordinator.swift in Sources */,
