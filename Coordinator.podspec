@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
 
   spec.source                   = { :git => "https://github.com/MathisDetourbet/Coordinator.git", :tag => "#{spec.version}" }
 
-  spec.source_files             = "Coordinator/**/*.{swift}"
+  spec.source_files             = "Coordinator/*.{swift,plist,h}"
   spec.framework                = "UIKit"
   spec.requires_arc             = true
 
