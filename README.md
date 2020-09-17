@@ -4,7 +4,7 @@ Coordinator is a light navigation interface for iOS mobile apps. Basically, Coor
 So, Coordinator should help you to split your navigation code in multiple objects because a UIViewController doesn't should know the navigation. From that, you will create piece of code reusable anywhere in your app! :)
 
 ## Code example
-Firstly, you have to know the type of your rootViewController. I mean, is it a UIViewController, UINavigationController or UITabBarController. Then, create your a class `RootCoordinator` which inherits from Coordinator or NavCoordinator or TabBarCoordinator.
+Firstly, you have to know the type of your rootViewController. I mean, is it a UIViewController, UINavigationController or UITabBarController. Then, create your class `RootCoordinator` which inherits from Coordinator or NavCoordinator or TabBarCoordinator.
 
 ```
 class RootCoordinator: TabBarCoordinator {
