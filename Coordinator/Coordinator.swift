@@ -27,7 +27,7 @@ public protocol Coordinator: ModalPresenter, ParentCoordinatorDelegate {
     /// Refers to its parent. Used to communicate with its parent.
     var parentCoordinatorDelegate: ParentCoordinatorDelegate? { get set }
     
-    /// Present modally a view controller on top of another controller.
+    /// Init a coordinator by passing a controller to it.
     ///
     /// - Parameter controller: The view controller to set. It represents the level of navigation of the coordinator. This parameter should inherit from `UIViewController` class.
     ///
